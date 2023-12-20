@@ -16,6 +16,7 @@ function App() {
         console.log(error);
       }
     };
+    console.log(first);
 
     getData();
   }, []);
