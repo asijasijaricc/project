@@ -24,14 +24,28 @@ function App() {
         />
       </div>
       <div className="pocetak">
-        <h4>Hi ! I am as.</h4>
-        <hr />
-        <p>
-          Welcome aboard! At as. we're passionate about business. Dive into a
-          treasure trove of articles, insights, and stories crafted just for
-          you.Ready to embark on an exciting journey? Start exploring below and
-          uncover the endless possibilities of world of business with us!
-        </p>
+        <div>
+          <h4>
+            Hi ! I am <span>as.</span>
+          </h4>
+          <hr />
+          <br />
+          <p>
+            Welcome aboard! At <span>as.</span> we're passionate about business.
+            Dive into a treasure trove of articles, insights, and stories
+            crafted just for you.Ready to embark on an exciting journey? Start
+            exploring below and uncover the endless possibilities of world of
+            business with us!
+          </p>
+          <br />
+          <h5>DREAM. PLAN. DO.</h5>
+          <div className="boss">
+            <img
+              src="https://i.pinimg.com/564x/38/ab/2b/38ab2bed9bd37c369349440d94cb54d8.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
