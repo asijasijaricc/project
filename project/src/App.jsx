@@ -1,9 +1,18 @@
 import "./app.css";
 import img from "../public/as.jpg";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter([
+  { path: "/", element: <p></p> },
+  { path: "/articles/:id", element: <p></p> },
+  { path: "/contact/:id", element: <p></p> },
+  { path: "/about/:id", element: <p></p> },
+]);
 
 function App() {
   return (
     <div>
+      <RouterProvider router={router} />
       <div className="header">
         <div className="logic">
           <img src={img} alt="" />
@@ -11,6 +20,7 @@ function App() {
         <div className="linkovi">
           <ul>home</ul>
           <ul>articles</ul>
+          <ul>categories</ul>
           <ul>contact</ul>
           <ul>about</ul>
         </div>
