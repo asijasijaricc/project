@@ -68,8 +68,73 @@
   border-radius: 7%;
 }
 
+.cilj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  font-size: larger;
+  gap: 30px;
+  margin-left: 400px;
+  margin-top: 90px;
+}
+
+.cilj h1 {
+  color: #ba727e;
+}
+
 .stafic {
+  height: 400px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.citaci {
+  border: 3px solid pink;
+  padding: 40px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.citaci p {
+  color: #772f3b;
+}
+
+.naocare {
+  font-size: xx-large;
+  color: #ba727e;
+}
+
+.lajkovi {
+  border: 3px solid pink;
+  padding: 40px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.lajkovi p {
+  color: #772f3b;
+}
+
+.srce {
+  font-size: xx-large;
+  color: #ba727e;
+}
+
+.nagrade {
+  border: 3px solid pink;
+  padding: 40px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.nagrade p {
+  color: #772f3b;
+}
+
+.trofej {
+  font-size: xx-large;
+  color: #ba727e;
 }
