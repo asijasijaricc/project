@@ -57,6 +57,20 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="stafic">
+        <div className="citaci">
+          <h1>50k</h1>
+          <p>readers per day</p>
+        </div>
+        <div className="lajkovi">
+          <h1>15K</h1>
+          <p>likes on the post</p>
+        </div>
+        <div className="nagrade">
+          <h1>146</h1>
+          <p>social media awards</p>
+        </div>
+      </div>
     </div>
   );
 }
