@@ -1,47 +1,34 @@
 import "./app.css";
-import img from "../public/as.jpg";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlasses } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import Divider from "../component/dev/divider";
+import Header from "../component/nav/header";
+import Contact from "./pages/kontakt/contact";
+import Articles from "./pages/artikli/articles";
+import About from "./pages/us/about";
+import Categories from "./pages/kategorija/categories";
+import Footer from "../component/foot/footer";
 
-const router = createBrowserRouter([
-  { path: "/", element: <p></p> },
-  { path: "/articles/:id", element: <p></p> },
-  { path: "/contact/:id", element: <p></p> },
-  { path: "/about/:id", element: <p></p> },
-]);
+// const router = createBrowserRouter([
+//   { path: "/", element: <App /> },
+//   { path: "/articles/:id", element: <Articles /> },
+//   { path: "/categories/:id", element: <Categories /> },
+//   { path: "/contact/:id", element: <Contact /> },
+//   { path: "/about/:id", element: <About /> },
+// ]);
 
 function App() {
   return (
     <div>
-      <RouterProvider router={router} />
-      <div className="header">
-        <div className="logic">
-          <img src={img} alt="" />
-        </div>
-        <div className="linkovi">
-          <ul>home</ul>
-          <ul>articles</ul>
-          <ul>categories</ul>
-          <ul>contact</ul>
-          <ul>about</ul>
-        </div>
-        <input
-          className="pretrazi"
-          type="text"
-          disabled={false}
-          placeholder="search"
-          size="lg"
-          variant="soft"
-        />
-      </div>
+      {/* <RouterProvider router={router} /> */}
+      <Header />
       <div className="pocetak">
         <div>
           <h4>
-            Hi ! I am <span>as.</span>
+            Hi ! We are <span>as.</span>
           </h4>
           <hr />
           <br />
@@ -93,6 +80,9 @@ function App() {
           <p>social media awards</p>
         </div>
       </div>
+      <Divider />
+      <hr />
+      <Footer />
     </div>
   );
 }

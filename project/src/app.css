@@ -20,6 +20,10 @@
   color: grey;
 }
 
+.linkovi a {
+  text-decoration: none;
+}
+
 .pretrazi {
   margin-left: 50px;
   height: 30px;
@@ -46,7 +50,7 @@
   height: 2px;
   background-color: black;
   border: none;
-  margin-left: 150px;
+  margin-left: 180px;
   bottom: 15px;
 }
 
