@@ -1,10 +1,11 @@
-import Footer from "../../../component/foot/footer";
-import Header from "../../../component/nav/header";
+import Footer from "../foot/footer";
+import Header from "../nav/header";
 
 const About = () => {
   return (
     <div>
       <Header />
+      <p>about</p>
       <Footer />
     </div>
   );
