@@ -3,6 +3,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="sve">
+      <hr />
       <div className="first">
         <img src="/as.jpg" alt="Alt text" />
         <p>
