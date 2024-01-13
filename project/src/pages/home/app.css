@@ -142,3 +142,62 @@
   font-size: xx-large;
   color: #ba727e;
 }
+
+.pretplata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.pretplata h1 {
+  color: #ba727e;
+}
+
+.tekst {
+  width: 1000px;
+  display: flex;
+  margin-top: 15px;
+}
+
+.karticesub {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+}
+
+.karticesub h1 {
+  color: #772f3b;
+}
+
+.subic {
+  background-color: #ba727e;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.subic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.subic hr {
+  color: grey;
+}
+
+.naziv {
+  color: #772f3b;
+  width: 140px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #772f3b;
+  font-size: large;
+}
