@@ -178,7 +178,6 @@ const Home = () => {
           <Layout header={"$14.99"} paragraph={"/ month"} />
         </div>
       </div>
-      <hr />
       {/* <PricingCards /> */}
       <Footer />
     </div>

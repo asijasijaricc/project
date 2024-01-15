@@ -6,3 +6,58 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.idiot {
+  color: #ba727e;
+  margin-left: 200px;
+  padding: 50px;
+}
+
+.svi {
+  display: flex;
+  flex-direction: row;
+  gap: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputici {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+  font-size: xx-large;
+}
+
+.inputici input {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.mesta {
+  margin: 20px;
+  font-size: large;
+}
+
+.gluposti {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: larger;
+  margin-top: 4px;
+}
+
+.mesta h3 {
+  color: #ba727e;
+}
+
+.gluposti a {
+  color: #b44054;
+  text-decoration: none;
+}
+
+.mapica {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
