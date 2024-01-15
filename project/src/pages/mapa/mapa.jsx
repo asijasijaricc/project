@@ -1,6 +1,6 @@
 const MapComponent = () => {
   const wrapperStyle = {
-    width: "990px",
+    width: "1100px",
     borderRadius: "10px",
     overflow: "hidden",
   };

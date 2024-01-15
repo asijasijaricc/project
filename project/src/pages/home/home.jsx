@@ -15,7 +15,6 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <hr />
       <div className="pocetak">
         <div>
           <h4>

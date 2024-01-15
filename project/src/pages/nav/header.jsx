@@ -46,6 +46,7 @@ const Header = () => {
           variant="soft"
         />
       </div>
+      <hr />
     </div>
   );
 };
