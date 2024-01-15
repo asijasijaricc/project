@@ -14,7 +14,7 @@ const Footer = () => {
         <h2>Contact us !!</h2>
 
         <p>as.business@gmail.com</p>
-        <p>AVNOJ BB</p>
+        <p>Novi Pazar, Serbia - AVNOJ BB</p>
         <p>+381 61 234567</p>
       </div>
       <div className="third">

@@ -36,11 +36,6 @@ const Header = () => {
               Contact
             </Link>
           </ul>
-          <ul>
-            <Link to={"/about"} style={{ color: isActive("/about") }}>
-              About
-            </Link>
-          </ul>
         </div>
         <input
           className="pretrazi"
