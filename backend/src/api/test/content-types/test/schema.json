@@ -1,19 +1,18 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "tests",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Categories",
-    "description": ""
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
-      "type": "string"
+    "blog": {
+      "type": "text"
     },
     "description": {
       "type": "string"

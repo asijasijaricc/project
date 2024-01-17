@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Raleway:wght@300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.svi {
+  margin: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nmg {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  height: 850px;
+}
+
+.slikica img {
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.nmg h1 {
+  color: #ba727e;
+}
+
+.nmg p {
+  font-size: larger;
+}
+
+.nmg button {
+  background-color: pink;
+  color: grey;
+}
