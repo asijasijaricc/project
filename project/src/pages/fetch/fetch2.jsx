@@ -10,11 +10,11 @@ const App = () => {
       try {
         const response = await axios.get("http://localhost:1337/articles");
         setArticles(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Greška pri dohvatanju podataka:", error);
       }
     };
-    console.log(response.data);
 
     fetchBlogArticles();
   }, []);
