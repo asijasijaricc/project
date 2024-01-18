@@ -5,6 +5,7 @@ import Footer from "../foot/footer";
 import Kartica from "../card/kartica";
 import { Grid } from "@mui/material";
 import "./articles.css";
+import { Link } from "react-router-dom";
 
 const Articles = () => {
   const [articles, setArticles] = useState(null);
@@ -26,19 +27,22 @@ const Articles = () => {
       <div className="naslov">
         <h1>Our best articles</h1>
       </div>
-      <Grid container spacing={4}>
+      <Grid container spacing={2}>
         {articles &&
           articles.map((item) => (
-            <Grid item key={item.id} sx={12} sm={8} md={6}>
-              <Kartica
-                key={item.id}
-                title={item.attributes.title}
-                description={item.attributes.description}
-                image={
-                  "http://localhost:1337" +
-                  item.attributes.cover.data.attributes.url
-                }
-              />
+            <Grid item key={item.id} sx={7} sm={2} md={4}>
+              <Link to={`/articles/${item.attributes.slug}`}>
+                <Kartica
+                  key={item.id}
+                  title={item.attributes.title}
+                  description={item.attributes.description}
+                  image={
+                    "http://localhost:1337" +
+                    item.attributes.cover.data.attributes.url
+                  }
+                  slug={item.attributes.slug}
+                />
+              </Link>
             </Grid>
           ))}
       </Grid>

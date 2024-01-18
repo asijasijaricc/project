@@ -3,7 +3,7 @@ import Footer from "../foot/footer";
 import Header from "../nav/header";
 import { Grid } from "@mui/material";
 import { blogApi } from "../api/api";
-import Kartica from "../card/kartica";
+import Kat from "../card/katecard";
 
 const Categories = () => {
   const [categories, setCategories] = useState(null);
@@ -22,16 +22,16 @@ const Categories = () => {
   return (
     <div>
       <Header />
-      <div className="naslov">
+      <div className="naslov" style={{ marginBottom: "80px" }}>
         <h1>What u can read about here</h1>
       </div>
-      <Grid container spacing={4}>
+      <Grid container spacing={5}>
         {categories &&
           categories.map((item) => (
-            <Grid item key={item.id} sx={12} sm={8} md={6}>
-              <Kartica
+            <Grid item key={item.id} sx={7} sm={2} md={4}>
+              <Kat
                 key={item.id}
-                title={item.attributes.title}
+                title={item.attributes.category}
                 description={item.attributes.description}
               />
             </Grid>

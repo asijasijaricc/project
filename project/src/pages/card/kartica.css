@@ -8,7 +8,7 @@
 }
 
 .svi {
-  margin: 150px;
+  margin: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +18,8 @@
   border: 1px solid grey;
   padding: 20px;
   border-radius: 10px;
-  width: 700px;
-  height: 850px;
+  width: 1000px;
+  height: 100%;
 }
 
 .slikica img {
@@ -30,10 +30,11 @@
 
 .nmg h1 {
   color: #ba727e;
+  font-size: x-large;
 }
 
 .nmg p {
-  font-size: larger;
+  font-size: medium;
 }
 
 .nmg button {

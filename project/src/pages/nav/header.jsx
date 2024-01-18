@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
   const location = useLocation();
+  const [searchTerm, setSearchTerm] = useState("");
 
   const isActive = (path) => {
     return location.pathname === path ? "pink" : "grey";
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+
+    const filteredSearchTerm = e.target.value
+      .toLowerCase()
+      .replace(/\b(the|business)\b/g, "");
+
+    console.log("Filtered Search Term:", filteredSearchTerm);
   };
 
   return (
@@ -44,6 +55,7 @@ const Header = () => {
           placeholder="Search"
           size="lg"
           variant="soft"
+          onChange={handleSearchChange}
         />
       </div>
       <hr />
