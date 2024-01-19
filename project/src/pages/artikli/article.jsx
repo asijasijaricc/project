@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { blogApi } from "../api/api";
 import Header from "../nav/header";
 import Footer from "../foot/footer";
+import Artikal from "../card/arikal";
 
 const ArticlePage = () => {
   const { articleName } = useParams();
@@ -27,8 +28,17 @@ const ArticlePage = () => {
   return (
     <div>
       <Header />
-      {article && <h1>{article.attributes.title}</h1>}
-      {article && <p>{article.attributes.description}</p>}
+      <Artikal />
+      {article && (
+        <h1 style={{ color: "pink", margin: "40px" }}>
+          {article.attributes.title}
+        </h1>
+      )}
+      {article && (
+        <p style={{ fontSize: "x-large", margin: "40px" }}>
+          {article.attributes.description}
+        </p>
+      )}
       {article &&
         article.attributes.description2 &&
         article.attributes.description2.length > 0 && (
@@ -39,7 +49,9 @@ const ArticlePage = () => {
                   <div>
                     {item.children.map((child, childIndex) => (
                       <div key={childIndex}>
-                        <p>{child.text}</p>
+                        <p style={{ fontSize: "larger", margin: "40px" }}>
+                          {child.text}
+                        </p>
                       </div>
                     ))}
                   </div>

@@ -15,7 +15,7 @@ const Kartica = ({ title, description, image, id }) => {
   // };
   console.log(id);
   return (
-    <Link to={`/articles/${id}`}>
+    <Link style={{ textDecoration: "none" }} to={`/articles/${id}`}>
       <div className="svi">
         <div className="nmg">
           <div className="slikica">
