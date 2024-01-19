@@ -31,7 +31,10 @@ const Articles = () => {
         {articles &&
           articles.map((item) => (
             <Grid item key={item.id} sx={7} sm={2} md={4}>
-              <Link to={`/articles/${item.attributes.slug}`}>
+              <Link
+                to={`/articles/${item.attributes.slug}`}
+                style={{ textDecoration: "none" }}
+              >
                 <Kartica
                   key={item.id}
                   title={item.attributes.title}
@@ -40,6 +43,7 @@ const Articles = () => {
                     "http://localhost:1337" +
                     item.attributes.cover.data.attributes.url
                   }
+                  id={item.id}
                   slug={item.attributes.slug}
                 />
               </Link>

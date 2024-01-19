@@ -19,7 +19,7 @@ const Header = () => {
 
     console.log("Filtered Search Term:", filteredSearchTerm);
   };
-
+  
   return (
     <div>
       <div className="header">
